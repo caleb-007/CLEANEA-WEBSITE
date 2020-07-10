@@ -7,6 +7,7 @@
     --green:  #25B43C;
     --hover-color:  rgb(236, 234, 234);
     --white:#fff;
+    --gray:#C4C4C4;
 }
 * {
     margin: 0;
@@ -20,7 +21,10 @@ html,body {
     height: 15px!important;
     width: 15px!important;
     border-radius: 50%!important;
-    background-color: #C4C4C4!important;
+    background-color:var(--green)!important;
+}
+.circle:hover {
+    background-color: var(--gray)!important;
 }
 .carousel-indicators {
     transform: translateY(120%)!important;
@@ -160,11 +164,22 @@ nav ul li a:hover {
     color: #000!important;
 }
 @media (max-width:768px){
+    .navbar-nav li{
+       font-size: 10px;
+   }
+ }
+ @media (max-width:550px){
+    .navbar-nav li{
+       font-size: 1rem;
+   }
+ }
+@media (max-width:768px){
  .margin {
      margin-top: 3rem !important;
      margin: auto;
      width: 100%!important;
  }
+ 
  .md {
      display: none;
  }
@@ -199,6 +214,7 @@ nav ul li a:hover {
      margin-top: 1rem !important;
      margin-bottom: 2rem !important;
     }
+  
    }
 
    @media (max-width:500px){
