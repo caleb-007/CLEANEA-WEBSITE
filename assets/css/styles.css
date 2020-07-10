@@ -156,7 +156,9 @@ nav ul li a:hover {
         padding-bottom: 5rem;
     }
    }
-
+   .h-1:hover {
+    color: #000!important;
+}
 @media (max-width:768px){
  .margin {
      margin-top: 3rem !important;
@@ -169,6 +171,7 @@ nav ul li a:hover {
  .sm {
      display: block;
  }
+ 
  .sm-2 {
     padding-bottom: 30%;
  }

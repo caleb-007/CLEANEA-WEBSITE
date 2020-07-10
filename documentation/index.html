@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Cleaning service home-page - Documentation</title>
+    <title>CLEANA Cleaning service - Documentation</title>
 
     <meta name="description" content="" />
     <meta name="author" content="Team Syntax" />
@@ -141,7 +141,6 @@
         <li><a href="#icons" title="Icons">Icons</a></li>
         <li><a href="#logo" title="Logo">Logo</a></li>
         <li><a href="#sliders" title="Sliders">Sliders</a></li>
-        <li><a href="#google_map" title="Google Map">Google Map</a></li>
         <li>
           <a href="#sources_and_credits" title="Sources and Credits"
             >Sources and Credits</a
@@ -155,13 +154,13 @@
     </div>
     <div id="documenter_content">
       <section id="documenter_cover">
-        <h1>Zuri Homes Ltd.</h1>
+        <h1>CLEANA cleaning service.</h1>
         <h2>Responsive HTML5 Template</h2>
         <div id="documenter_buttons"></div>
         <hr />
         <ul>
-          <li>created: 03/07/2020</li>
-          <li>latest update: 03/07/2020</li>
+          <li>created: 10/07/2020</li>
+          <li>latest update: 10/07/2020</li>
           <li>by: teamsyntax</li>
 
           <li>
@@ -252,19 +251,8 @@
         <pre class="prettyprint lang-html linenums">
 - assets/
   - css/
-    - global.css                - (Main CSS file) 
-    - homepage.css              - (HomePage Specific CSS file) 
-    - about.css                 - (About Specific CSS file) 
-    - residence.css             - (Residence Specific CSS file) 
-    - contact.css               - (Contact Specific CSS file) 
-    - responsive.css            - (Responsive Styling CSS file) 
-    - slick.css                 - (Slider CSS file) 
-    - slick.theme.css           - (Slider Theme CSS file) 
+    - styles.css                - (Main CSS file) 
 
-    - bootstrap/bootstrap.min.css - (Bootstrap Minified CSS file)
-    - animate/animate.min.css     - (Animation Minified CSS file)
-
-  - fonts/  - contains fonts for slick slider library
 </pre
         >
       </section>
@@ -303,7 +291,7 @@
 &lt;!-- Wow JS --&gt;
 &lt;script src=&quot;./assets/js/wow/wow.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   
 &lt;!-- Custom JS --&gt;
-&lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./assets/js/app.js&quot;&gt;&lt;/script&gt;
 </pre
           >
         </div>
@@ -323,8 +311,8 @@
         </div>
         <div>
           <pre class="prettyprint lang-html linenums">
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&family=Varela+Round&display=swap');
-            </pre
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');</pre
           >
         </div>
         <p>&nbsp;</p>
@@ -344,16 +332,13 @@
           </div>
           <div>
             <pre class="prettyprint lang-css linenums">
-:root {
-  --header-font: 'Playfair Display', serif;
-  --text-font: 'Poppins', sans-serif;
-  --nav-font: 'Varela Round', sans-serif;
-  --primary-color: #4070ff;
-  --secondary-color: #5983ff;
-  --grey-color: #e0e0e0;
-  --dark-color: #333;
-  --white-color: #fff;
-}</pre
+              :root {
+                --google-font-montserrat: 'Montserrat', sans-serif;
+                --google-font-Playfair: 'Playfair Display SC', serif;
+                --green:  #25B43C;
+                --hover-color:  rgb(236, 234, 234);
+                --white:#fff;
+                    }</pre
             >
           </div>
         </div>
@@ -421,125 +406,55 @@
           <pre class="prettyprint lang-html linenums">
 &lt;!-- Sliders --&gt;
 &lt;div class=&quot;sliders&quot;&gt;
-    &lt;div class=&quot;row home-sliders&quot;&gt;
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-          &lt;img src=&quot;./assets/images/sliders/house.png&quot; alt=&quot;Exclusive Apartment&quot; class=&quot;img-fluid slider-img&quot; &gt;
-          &lt;div class=&quot;slider-desc p-2 px-3&quot;&gt;
-            &lt;p class=&quot;slider-name m-0&quot;&gt;Exclusive Apartment&quot;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;slider-link&quot;&gt;Explore &gt;&quot;/a&gt;
-          &lt;/div&gt;          
-      &lt;/div&gt;
+&lt;ul class=&quot;carousel-indicators&quot;&gt;
+&lt;li data-target=&quot;#demo&quot; class=&quot;circle&quot; data-slide-to=&quot;0&quot; &gt;
+&lt;/li&gt;
+&lt;li data-target=&quot;#demo&quot; class=&quot;circle&quot; data-slide-to=&quot;2&quot; &gt;
+&lt;/li&gt;
+&lt;li data-target=&quot;#demo&quot; class=&quot;circle&quot; data-slide-to=&quot;3&quot; &gt;
+&lt;/li&gt;
+&lt;!--  The slideshow --&gt;
+&lt;div class=&quot;carousel-inner&quot;&gt;
+  &lt;div class=&quot;carousel-item active&quot;&gt;
 
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
+&lt;!-- /.images will go here--&gt;
+  
+&lt;/div&gt
+&lt;div class=&quot;carousel-item active&quot;&gt;
 
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /.Testimonial --&gt;</pre
-          >
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            If you want change option for sliders you need to open
-            assets/js/custom.js and find &#39;// Our Sliders Start&#39; function
-            and set true/false for option what you wont to change
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <pre class="prettyprint lang-js linenums">
-// Slick Slider Configuration
-$(document).ready(function () {
-  // Homepage Sliders
-  $('.home-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 3,
-    dots: true,
-    prevArrow: $('.prev-btn'),
-    nextArrow: $('.next-btn'),
-  })
+&lt;!-- /.images will go here--&gt;
+  
+&lt;/div&gt
+&lt;div class=&quot;carousel-item active&quot;&gt;
 
-  $('.residence-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slideToScroll: 1,
-        },
-      },
-    ],
-  })
-})
+&lt;!-- /.images will go here--&gt;
+  
+&lt;/div&gt
+
+&lt;/div&gt;
 </pre
           >
+          <div>
+            &nbsp;
+          </div>
+          
+          <div>
+            &nbsp;
+          </div>
+          <div>
+            &nbsp;
+          </div>
+         
         </div>
         <p>
           You can find more documentation here&nbsp;<a
-            href="https://kenwheeler.github.io/slick/"
+            href="https://getbootstrap.com/docs/4.1/components/carousel/"
             target="_blank"
-            >https://kenwheeler.github.io/slick/</a
+            >https://getbootstrap.com/docs/4.1/components/carousel/</a
           >
         </p>
       </section>
-      <section id="google_map">
-        <div class="page-header">
-          <h3>Google Map</h3>
-          <hr class="notop" />
-        </div>
-        <div>
-          The map used in the content is a google map embedded
-        </div>
-        <div>
-          <a href="https://www.google.ng/maps">https://www.google.ng/maps</a>
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          change&nbsp;
-        </div>
-        <pre class="prettyprint lang-html linenums">change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
-&lt;iframe
-	src=""
-	width="100%"
-	height="450"
-	frameborder="0"
-	style="border: 0;"
-	allowfullscreen=""
-	aria-hidden="false"
-	tabindex="0"
-&gt;&lt;/iframe&gt;
-		</pre>
-
-        <div>
-          to
-        </div>
-        <pre class="prettyprint lang-html linenums">
-          To your preferred Location
-        </pre>
-      </section>
+     
       <section id="sources_and_credits">
         <div class="page-header">
           <h3>Sources and Credits</h3>
@@ -589,18 +504,7 @@ $(document).ready(function () {
             >http://daneden.me/animate</a
           >
         </div>
-        <div>
-          <strong>wow.js</strong> -&nbsp;<a
-            href="http://mynameismatthieu.com/WOW/"
-            >http://mynameismatthieu.com/WOW</a
-          >/
-        </div>
-        <div>
-          <strong>jquery.sticky.js</strong> -&nbsp;<a
-            href="http://stickyjs.com/"
-            >http://stickyjs.com/</a
-          >
-        </div>
+     
         <div>
           &nbsp;
         </div>
